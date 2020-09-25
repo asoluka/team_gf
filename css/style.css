@@ -1,0 +1,214 @@
+* { 
+  font-family: 'Montserrat', sans-serif;
+}
+p { font-size: .9em; }
+
+:root {
+  --red: #e50101;
+  --blue: #113497;
+  --light-blue: #1a4bd6;
+  --white: #fff;
+  --ash: #f9f9f9;
+  --dark-ash: #0e151e;
+  --cream-green: #d1e1e2ba;
+  --black: #000000;
+}
+
+.color-red { color: var(--red) !important; }
+.color-blue { color: var(--blue) !important; }
+.color-light-blue { color: var(--light-blue) !important; }
+.color-white { color: var(--white) !important; }
+.color-dark-ash { color: var(--dark-ash) !important; }
+.color-black { color: var(--black) !important; }
+
+.bg-color-black { background-color: var(--black) !important; }
+.bg-color-blue { background-color: var(--blue) !important; }
+.bg-color-red { background-color: var(--red) !important; }
+.bg-color-white { background-color: var(--white) !important; }
+.bg-color-ash { background-color: var(--ash) !important; }
+.bg-color-dark-ash { background-color: var(--dark-ash) !important; }
+.bg-color-cream-green { background-color: var(--cream-green) !important; }
+
+.h-10 { min-height: 10vh; }
+.h-20 { min-height: 20vh; }
+.h-30 { min-height: 30vh; }
+.h-40 { min-height: 40vh; }
+.h-50 { min-height: 50vh; }
+.h-60 { min-height: 60vh; }
+.h-70 { min-height: 70vh; }
+.h-80 { min-height: 80vh; }
+.h-90 { min-height: 90vh; }
+.h-100 { min-height: 100vh; }
+
+/* text transform */
+.uc {
+  text-transform: uppercase;
+}
+
+.center-elem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.br-1 {
+  border-right: 1px solid black;
+}
+
+.btn-gf {
+  background-color: var(--light-blue);
+  border-radius: 30px;
+  padding: 5px 25px;
+}
+
+span.btn-gf {
+  background-color: var(--light-blue);
+  border-radius: 50px;
+  padding: 3px 15px;
+  color: var(--white);
+  font-size: .8em
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.heading-box { 
+  padding: 5px 20px;
+  background: var(--dark-ash);
+  color: var(--white);
+}
+
+.top {
+  margin-bottom: 150px;
+}
+
+ul.top-nav>li>a {
+  color: var(--white) !important;
+  background-color: transparent;
+  font-size: .9em !important;
+}
+
+.nav-wrapper {
+  position: static;
+  z-index: 99999999999999999999999999999;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 11px 6px -8px rgba(179,179,179,0.68);
+  -moz-box-shadow: 0px 11px 6px -8px rgba(179,179,179,0.68);
+  box-shadow: 0px 11px 6px -8px rgba(179,179,179,0.68);
+}
+
+.overlap-top {
+  margin-top: -280px;
+  width: 100%;
+}
+
+.overlap-bottom {
+  margin-bottom: -150px;
+  width: 100%;
+}
+
+.upcoming-events-section {
+  background-color: var(--white);
+  padding: 30px 40px 30px 40px;
+}
+
+.upcoming-events-section .row:not(:last-child) { margin-bottom: 15px !important; }
+.upcoming-events-section .event-highlight *:not(:last-child) { margin-bottom: 5px !important; }
+.upcoming-event-detail *:not(:last-child) { margin-bottom: 10px !important; }
+
+.br-1 {border-radius: 5px;}
+.br-2 {border-radius: 10px;}
+.no-br { border-radius: 0 !important;}
+.no-b { border: 0 !important;}
+
+.navbar-toggler {
+  background-color: #000;
+  color: #fff !important;
+  padding-top: 10px;
+}
+
+button.navbar-toggler, button.navbar-toggler:active {
+  background-color: transparent;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.lead {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+.featured .nav-item > .nav-link {
+  color: var(--dark-ash);
+  font-weight: bold;
+}
+
+.the-president .brief-info {
+  min-height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.prayer-request {
+  background: var(--blue);
+  color: var(--white);
+}
+
+img.replenish {
+  max-height: 400px !important;
+  overflow: hidden;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 0px !important;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.lyrics-card {
+  min-height: 50vh;
+}
+
+.tyrics-card > *{
+  min-height: inherit;
+}
+
+input[type="textarea"] {
+  min-height: 100px;
+}
+
+@media (max-width: 428px) {
+  .nav-wrapper {
+    position: static;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .welcome {
+    padding: 50px 0 0 0;
+  }
+
+  .lead {
+    font-size: 2em;
+  }
+}
